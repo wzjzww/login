@@ -1,0 +1,119 @@
+body {
+	font-size: 16px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+}
+li {
+	list-style: none;
+}
+html,body,.P_content {
+	height: 100%;
+}
+.P_content {
+	background: linear-gradient(to right top,rgba(38,50,105,0.78), rgba(255,152,0,0.45)), url(../img/bg.png) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+}
+header {
+	height: 2em;
+    padding-top: 0.6em;
+	position: relative;
+}
+header>a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 20px;
+}
+header>a>.icon-login {
+	font-size: 2em;
+	color: #555;
+}
+main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.login {
+	width: 25em;
+    height: 16em;
+	background: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10%;
+    margin-left: -15%;
+}
+main>div>div>a {
+	float: right;
+	padding: 0.8em;
+}
+.nav,
+.nav1 {
+	text-align: center;
+	padding: 1em;
+	color: #000;
+}
+.nav>.deng,
+.nav1>.zhu {
+	padding-bottom: 0.2em;
+	border-bottom: solid 2px #000;
+}
+.form>div {
+	color: #ff9800;
+    font-size: 0.8em;
+    text-align: center;
+    margin-left: -2em;
+    margin-bottom: 1em;
+}
+form>div {
+	width: 18em;
+    height: 2.5em;
+	border: solid 1px #ccc;
+	margin: 0 auto;
+    margin-bottom: 0.8em;
+    line-height: 2.5em;
+}
+form>div>li {
+	float: left;
+    padding: 0 0.5em;
+}
+form>div>input {
+	width: 18em;
+    height: 2.6em;
+    border: none;
+    outline: none;
+}
+button {
+	width: 5em;
+    height: 3em;
+    background: #fff;
+    box-shadow: 0.2em 0.3em 0.8em 0.4em rgb(0,0,0,0.02);
+    margin-left: 4.2em;
+    outline-style: none;
+    cursor: pointer;
+}
+.register {
+	width: 25em;
+    height: 19em;
+	background: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10%;
+    margin-left: -15%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 1s
+}
+main>div {
+	display: none;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_692680_u3y1iiuukajj1yvi.css">
+</head>
+<body>
+	<div class="P_content">
+		<header>
+		<a href="#"><li class="iconfont icon-login"></li></a>
+		</header>
+		<main>
+			<div>
+				<div class="login">
+					<a href="#"><li class="iconfont icon-guanbi"></li></a>
+					<div class="nav">
+						<a href="#" class="deng">登录</a>
+						<a href="#" class="zhu">注册</a>
+					</div>
+					<div class="form">
+						<div>用户名需输入3-8个字符，包括字母数字下划线</div>
+						<form>
+							<div class="user">
+								<li class="iconfont icon-ren"></li>
+								<input type="" name="" placeholder="用户名">
+							</div>
+							<div class="password">
+								<li class="iconfont icon-suo"></li>
+								<input type="" name="" placeholder="密码">
+							</div>
+							<button>登录</button>
+						</form>
+					</div>
+				</div>
+				<div class="register">
+					<a href="#"><li class="iconfont icon-guanbi"></li></a>
+					<div class="nav1">
+						<a href="#" class="deng">登录</a>
+						<a href="#" class="zhu">注册</a>
+					</div>
+					<div class="form one">
+						<div>用户名需输入3-8个字符，包括字母数字下划线</div>
+						<form>
+							<div class="username">
+								<li class="iconfont icon-ren"></li>
+								<input type="" name="" placeholder="用户名">
+							</div>
+							<div class="pass">
+								<li class="iconfont icon-suo"></li>
+								<input type="" name="" placeholder="密码">
+							</div>
+							<div class="word">
+								<li class="iconfont icon-suo"></li>
+								<input type="" name="" placeholder="再次输入密码">
+							</div>
+							<button>注册</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script type="text/javascript">
+		var a = document.querySelector('header>a')
+		var b = document.querySelector('main>div')
+		a.onclick = function(){
+			b.style.display = 'block'		
+		}
+		var deng = document.querySelector('.nav1>.deng')
+		var login = document.querySelector('.login')
+		var zhu = document.querySelector('.nav>.zhu')
+		var register = document.querySelector('.register')
+		deng.onclick = function(){
+			register.style.transform = 'rotateY(180deg)'
+			register.style.backfaceVisibility = 'hidden'
+			login.style.transform = 'rotateY(0deg)'
+			login.style.backfaceVisibility = 'visible'
+			login.style.transition = 'all 1s'
+		}
+		zhu.onclick = function(){
+			login.style.transform = 'rotateY(180deg)'
+			login.style.backfaceVisibility = 'hidden'
+			register.style.transform = 'rotateY(0deg)'
+			register.style.backfaceVisibility = 'visible'
+			register.style.transition = 'all 1s'
+		}
+		var close = document.querySelector('.login>a')
+		var close1 = document.querySelector('.register>a')
+		close.onclick = function(){
+			b.style.display = 'none'
+		}
+		close1.onclick = function(){
+			b.style.display = 'none'
+		}
+	</script>
+
+</body>
+</html>
